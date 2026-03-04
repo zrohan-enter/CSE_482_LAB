@@ -25,7 +25,7 @@ The portfolio highlights my academic background, technical skills, notable proje
 ---
 
 ## 📂 File Structure
-
+```
 CSE_482_LAB/
 │
 ├── index.html # Home page with hero section and quick highlights
