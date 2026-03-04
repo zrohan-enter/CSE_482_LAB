@@ -1,0 +1,169 @@
+/* Basic reset & Box Model [cite: 286] */
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: "Arial", sans-serif;
+  line-height: 1.6;
+  background: #f5f7fb;
+  color: #222;
+}
+
+/* Typography [cite: 265] */
+h1,
+h2,
+h3 {
+  color: #003366;
+}
+.text-center {
+  text-align: center;
+}
+.text-left {
+  text-align: left;
+}
+
+/* Header & Navigation  */
+header {
+  background-color: #003366;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+header h1 {
+  color: white;
+  margin: 0 0 10px 0;
+}
+nav a {
+  color: #ccc;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease; /* [cite: 430] */
+}
+nav a:hover,
+nav a.active {
+  background-color: #005fa3;
+  color: white;
+}
+
+/* Layout Containers [cite: 294] */
+.container {
+  max-width: 980px;
+  margin: 20px auto;
+  padding: 18px;
+}
+
+.profile-img {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+
+  /* 50% keeps it centered horizontally. 
+       20% moves the focus up near the top where your face is! */
+  object-position: 50% 20%;
+
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  border: 5px solid #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 51, 102, 0.15);
+  margin-bottom: 20px;
+  display: inline-block;
+}
+.btn {
+  display: inline-block;
+  background-color: #0078d4;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 15px;
+  transition: transform 0.25s ease; /* [cite: 433] */
+}
+.btn:hover {
+  transform: translateY(-2px);
+  background-color: #005fa3;
+}
+
+/* Card Style Blocks [cite: 307] */
+.card {
+  background: #fff;
+  border: 1px solid #e6e6e6;
+  border-radius: 12px;
+  padding: 20px;
+  margin-top: 16px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+.project-card {
+  margin-bottom: 20px;
+}
+
+/* Table [cite: 320, 321] */
+.info-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+.info-table th,
+.info-table td {
+  border: 1px solid #e6e6e6;
+  padding: 10px;
+  text-align: left;
+}
+.info-table th {
+  background: #f2f4ff;
+  width: 28%;
+}
+.info-table tr:nth-child(even) {
+  background: #f8f8f8;
+} /* [cite: 322] */
+
+/* Travel Pages Specific */
+.page-hero h1 {
+  margin-bottom: 6px;
+}
+.subtitle {
+  margin-top: 0;
+  color: #555;
+  font-style: italic;
+}
+.hero-img {
+  width: 100%;
+  max-height: 450px; /* Increased from 360px to show more of the photo */
+  object-fit: cover;
+  object-position: center top; /* THIS IS THE MAGIC FIX: It anchors the photo to the top! */
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  margin-top: 12px;
+}
+.gallery img {
+  width: 48%;
+  display: inline-block;
+  vertical-align: top;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  margin-top: 10px;
+}
+.gallery img:first-child {
+  margin-right: 2%;
+}
+.note {
+  color: #666;
+  font-size: 0.95em;
+  margin-top: 10px;
+}
+
+/* Footer [cite: 231] */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #eef2f6;
+  margin-top: 40px;
+  border-top: 1px solid #ccc;
+}
+footer a {
+  color: #0078d4;
+  text-decoration: none;
+}
