@@ -44,7 +44,7 @@ CSE_482_LAB/
 ├── cox2.jpg # Cox's Bazar gallery image
 ├── sajek1.jpg # Sajek Valley hero image
 └── sajek2.jpg # Sajek Valley gallery image
-
+```
 ---
 
 ## 🛠️ Technologies Used
