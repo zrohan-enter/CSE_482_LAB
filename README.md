@@ -25,8 +25,12 @@ The portfolio highlights my academic background, technical skills, notable proje
 ---
 
 ## 📂 File Structure
+<<<<<<< HEAD
 
 ```t
+=======
+```
+>>>>>>> 4e40d71566ca2f5ee4b6022cccb110c38f1adbec
 CSE_482_LAB/
 │
 ├── index.html        # Home page with hero section and quick highlights
@@ -40,11 +44,20 @@ CSE_482_LAB/
 │   └── style.css     # Global stylesheet with NO flexbox/grid
 │
 └── images/
+<<<<<<< HEAD
     ├── profile.jpg   # Main profile headshot
     ├── cox1.jpg      # Cox's Bazar hero image
     ├── cox2.jpg      # Cox's Bazar gallery image
     ├── sajek1.jpg    # Sajek Valley hero image
     └── sajek2.jpg    # Sajek Valley gallery image
+=======
+├── profile.jpg # Main profile headshot
+├── cox1.jpg # Cox's Bazar hero image
+├── cox2.jpg # Cox's Bazar gallery image
+├── sajek1.jpg # Sajek Valley hero image
+└── sajek2.jpg # Sajek Valley gallery image
+```
+>>>>>>> 4e40d71566ca2f5ee4b6022cccb110c38f1adbec
 ---
 
 ## 🛠️ Technologies Used
