@@ -26,25 +26,25 @@ The portfolio highlights my academic background, technical skills, notable proje
 
 ## 📂 File Structure
 
+```t
 CSE_482_LAB/
 │
-├── index.html # Home page with hero section and quick highlights
-├── about.html # Academic background, skills, and certifications
-├── projects.html # Detailed cards for technical projects
-├── travel1.html # Travel page: Cox's Bazar
-├── travel2.html # Travel page: Sajek Valley
-├── README.md # Project documentation
+├── index.html        # Home page with hero section and quick highlights
+├── about.html        # Academic background, skills, and certifications
+├── projects.html     # Detailed cards for technical projects
+├── travel1.html      # Travel page: Cox's Bazar
+├── travel2.html      # Travel page: Sajek Valley
+├── README.md         # Project documentation
 │
 ├── css/
-│ └── style.css # Global stylesheet with NO flexbox/grid
+│   └── style.css     # Global stylesheet with NO flexbox/grid
 │
 └── images/
-├── profile.jpg # Main profile headshot
-├── cox1.jpg # Cox's Bazar hero image
-├── cox2.jpg # Cox's Bazar gallery image
-├── sajek1.jpg # Sajek Valley hero image
-└── sajek2.jpg # Sajek Valley gallery image
-
+    ├── profile.jpg   # Main profile headshot
+    ├── cox1.jpg      # Cox's Bazar hero image
+    ├── cox2.jpg      # Cox's Bazar gallery image
+    ├── sajek1.jpg    # Sajek Valley hero image
+    └── sajek2.jpg    # Sajek Valley gallery image
 ---
 
 ## 🛠️ Technologies Used
@@ -58,3 +58,4 @@ CSE_482_LAB/
 ## ⚙️ How to Run
 
 Simply clone this repository or download the ZIP file. Open the index.html file in any modern web browser (Google Chrome, Mozilla Firefox, Microsoft Edge) to explore the portfolio. No local server or build tools are required.
+```

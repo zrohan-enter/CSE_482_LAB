@@ -4,73 +4,337 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Projects | Zawed Bin Tariq</title>
+
+    <!-- Bootstrap CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <header>
-      <div class="header-container">
-        <h1>Zawed Bin Tariq</h1>
-        <nav>
-          <a href="index.html">Home</a>
-          <a href="about.html">About</a>
-          <a class="active" href="projects.html">Projects</a>
-          <a href="travel1.html">Cox's Bazar</a>
-          <a href="travel2.html">Sajek</a>
-        </nav>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark custom-navbar sticky-top">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="index.html">Zawed Bin Tariq</a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navMenu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navMenu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="projects.html">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="travel1.html">Cox's Bazar</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="travel2.html">Sajek</a>
+            </li>
+          </ul>
+        </div>
       </div>
-    </header>
+    </nav>
 
-    <main class="container">
-      <h1 class="text-center">Notable Projects</h1>
-
-      <article class="card project-card">
-        <h2>Multilingual Modular Chatbot</h2>
-        <p>
-          Engineered a modular AI chatbot supporting multilingual dialogue, math
-          solving, and semantic search. Implemented TF-IDF + cosine similarity
-          retrieval with transformer-based summarization modules.
+    <!-- Page Banner -->
+    <section class="page-banner text-center">
+      <div class="container">
+        <h1>Notable Projects</h1>
+        <p class="lead">
+          Some of the projects I have worked on in software, security and
+          intelligent systems.
         </p>
-        <p class="note"><strong>Tech Used:</strong> Python, NLP, ML</p>
-      </article>
+      </div>
+    </section>
 
-      <article class="card project-card">
-        <h2>MediNear - Secure Doctor Platform</h2>
-        <p>
-          Architected a concurrency-safe scheduling system preventing double
-          booking via transactional logic. Implemented Role-Based Access Control
-          (RBAC) using PostgreSQL Row-Level Security.
-        </p>
-        <p class="note"><strong>Tech Used:</strong> PostgreSQL, Node.js</p>
-      </article>
+    <main class="container py-5">
+      <!-- Intro Alert -->
+      <div class="alert alert-warning shadow-sm rounded-3 mb-5">
+        <strong>Project Showcase:</strong> These projects reflect my interests
+        in AI, backend systems, security, databases and embedded systems.
+      </div>
 
-      <article class="card project-card">
-        <h2>Multi-Service Secure Server</h2>
-        <p>
-          Hardened Ubuntu server infrastructure with SSH key authentication and
-          firewall isolation. Deployed production-style secure multi-service
-          infrastructure including FTP and service validation.
-        </p>
-        <p class="note"><strong>Tech Used:</strong> Linux, Apache, SSH</p>
-      </article>
+      <div class="row g-4">
+        <!-- Project 1 -->
+        <div class="col-lg-6">
+          <div class="card project-card shadow-sm h-100">
+            <div class="card-body p-4">
+              <h3 class="card-title">Multilingual Modular Chatbot</h3>
+              <p class="card-text">
+                Engineered a modular AI chatbot supporting multilingual
+                dialogue, math solving, and semantic search. Implemented TF-IDF
+                + cosine similarity retrieval with transformer-based
+                summarization modules.
+              </p>
 
-      <article class="card project-card">
-        <h2>Embedded Smart Monitoring System</h2>
-        <p>
-          Developed sensor-based monitoring with dual-mode logic using STM32 DWT
-          registers for microsecond timing. Designed modular embedded
-          architecture for home automation with OLED display integration.
-        </p>
-        <p class="note"><strong>Tech Used:</strong> STM32, Embedded C</p>
-      </article>
+              <div class="mb-3">
+                <span class="badge bg-primary">Python</span>
+                <span class="badge bg-success">NLP</span>
+                <span class="badge bg-dark">Machine Learning</span>
+              </div>
+
+              <button
+                class="btn btn-primary custom-btn"
+                data-bs-toggle="modal"
+                data-bs-target="#chatbotModal"
+              >
+                View Details
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="col-lg-6">
+          <div class="card project-card shadow-sm h-100">
+            <div class="card-body p-4">
+              <h3 class="card-title">MediNear - Secure Doctor Platform</h3>
+              <p class="card-text">
+                Architected a concurrency-safe scheduling system preventing
+                double booking through transactional logic. Also implemented
+                role-based access management using database-level security
+                concepts.
+              </p>
+
+              <div class="mb-3">
+                <span class="badge bg-success">PostgreSQL</span>
+                <span class="badge bg-secondary">Node.js</span>
+                <span class="badge bg-info text-dark">Backend</span>
+              </div>
+
+              <button
+                class="btn btn-primary custom-btn"
+                data-bs-toggle="modal"
+                data-bs-target="#medinearModal"
+              >
+                View Details
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="col-lg-6">
+          <div class="card project-card shadow-sm h-100">
+            <div class="card-body p-4">
+              <h3 class="card-title">Multi-Service Secure Server</h3>
+              <p class="card-text">
+                Hardened Ubuntu server infrastructure with SSH key
+                authentication, firewall isolation, and production-style
+                multi-service validation. Focused on practical server security.
+              </p>
+
+              <div class="mb-3">
+                <span class="badge bg-dark">Linux</span>
+                <span class="badge bg-danger">SSH</span>
+                <span class="badge bg-warning text-dark">Apache</span>
+              </div>
+
+              <button
+                class="btn btn-primary custom-btn"
+                data-bs-toggle="modal"
+                data-bs-target="#serverModal"
+              >
+                View Details
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="col-lg-6">
+          <div class="card project-card shadow-sm h-100">
+            <div class="card-body p-4">
+              <h3 class="card-title">Embedded Smart Monitoring System</h3>
+              <p class="card-text">
+                Developed a sensor-based monitoring system with modular embedded
+                architecture, using STM32 timing control and OLED display
+                integration for smart monitoring tasks.
+              </p>
+
+              <div class="mb-3">
+                <span class="badge bg-secondary">STM32</span>
+                <span class="badge bg-primary">Embedded C</span>
+                <span class="badge bg-success">Automation</span>
+              </div>
+
+              <button
+                class="btn btn-primary custom-btn"
+                data-bs-toggle="modal"
+                data-bs-target="#embeddedModal"
+              >
+                View Details
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Optional Summary Card -->
+      <div class="card border-0 shadow-sm rounded-4 mt-5">
+        <div class="card-body p-4 text-center">
+          <h3 class="fw-bold mb-3">What these projects show</h3>
+          <p class="text-muted mb-0">
+            These works demonstrate my growing experience in problem solving,
+            software design, secure system thinking, and practical
+            implementation across multiple areas of computing.
+          </p>
+        </div>
+      </div>
     </main>
 
-    <footer>
-      <p>
-        &copy; 2026 Zawed Bin Tariq |
-        <a href="mailto:zawed.tariq@northsouth.edu"
-          >zawed.tariq@northsouth.edu</a
-        >
-      </p>
+    <!-- Footer -->
+    <footer class="footer-area text-center py-4">
+      <div class="container">
+        <p class="mb-1">&copy; 2026 Zawed Bin Tariq</p>
+        <p class="mb-0">
+          <a href="mailto:zawed.tariq@northsouth.edu"
+            >zawed.tariq@northsouth.edu</a
+          >
+        </p>
+      </div>
     </footer>
+
+    <!-- Modal 1 -->
+    <div class="modal fade" id="chatbotModal" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Multilingual Modular Chatbot</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+          <div class="modal-body">
+            This project focused on building an intelligent chatbot capable of
+            handling multilingual interaction. It also included semantic search,
+            mathematical problem handling and modular response design for better
+            extensibility.
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 2 -->
+    <div class="modal fade" id="medinearModal" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">MediNear - Secure Doctor Platform</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+          <div class="modal-body">
+            This project was designed to solve appointment scheduling issues
+            securely and efficiently. It used backend logic and database
+            constraints to prevent double booking and support safer access
+            control.
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 3 -->
+    <div class="modal fade" id="serverModal" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Multi-Service Secure Server</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+          <div class="modal-body">
+            In this project I worked on securing Linux-based server
+            infrastructure using SSH key authentication, firewall rules and
+            service separation. It was a practical exercise in server hardening
+            and secure deployment.
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 4 -->
+    <div class="modal fade" id="embeddedModal" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Embedded Smart Monitoring System</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+          <div class="modal-body">
+            This embedded systems project combined sensors, timing logic and
+            modular coding practices to create a smart monitoring solution. It
+            also included hardware display support for better interaction and
+            readability.
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>

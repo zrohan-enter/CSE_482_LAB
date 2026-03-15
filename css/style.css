@@ -1,169 +1,249 @@
-/* Basic reset & Box Model [cite: 286] */
-* {
-  box-sizing: border-box;
-}
 body {
-  margin: 0;
-  font-family: "Arial", sans-serif;
-  line-height: 1.6;
-  background: #f5f7fb;
-  color: #222;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to bottom, #f8fbff, #eef4ff);
+  color: #1f2937;
+  scroll-behavior: smooth;
 }
 
-/* Typography [cite: 265] */
-h1,
-h2,
-h3 {
-  color: #003366;
-}
-.text-center {
-  text-align: center;
-}
-.text-left {
-  text-align: left;
+.section-title {
+  color: #0d3b66;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
 }
 
-/* Header & Navigation  */
-header {
-  background-color: #003366;
-  color: white;
-  padding: 20px 0;
-  text-align: center;
-}
-header h1 {
-  color: white;
-  margin: 0 0 10px 0;
-}
-nav a {
-  color: #ccc;
-  text-decoration: none;
-  margin: 0 15px;
-  font-weight: bold;
-  padding: 5px 10px;
-  border-radius: 4px;
-  transition: background-color 0.3s ease; /* [cite: 430] */
-}
-nav a:hover,
-nav a.active {
-  background-color: #005fa3;
-  color: white;
+.section-subtitle {
+  color: #6b7280;
+  max-width: 720px;
+  margin: 0 auto;
 }
 
-/* Layout Containers [cite: 294] */
-.container {
-  max-width: 980px;
-  margin: 20px auto;
-  padding: 18px;
+.hero-section {
+  min-height: 88vh;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(135deg, #eaf4ff 0%, #f8fbff 55%, #ffffff 100%);
 }
 
-.profile-img {
-  width: 220px;
-  height: 220px;
+.hero-image {
+  width: 260px;
+  height: 260px;
   object-fit: cover;
-
-  /* 50% keeps it centered horizontally. 
-       20% moves the focus up near the top where your face is! */
   object-position: 50% 20%;
-
-  aspect-ratio: 1 / 1;
   border-radius: 50%;
-  border: 5px solid #ffffff;
-  box-shadow: 0 4px 12px rgba(0, 51, 102, 0.15);
-  margin-bottom: 20px;
-  display: inline-block;
-}
-.btn {
-  display: inline-block;
-  background-color: #0078d4;
-  color: white;
-  padding: 10px 20px;
-  text-decoration: none;
-  border-radius: 5px;
-  margin-top: 15px;
-  transition: transform 0.25s ease; /* [cite: 433] */
-}
-.btn:hover {
-  transform: translateY(-2px);
-  background-color: #005fa3;
+  border: 6px solid #ffffff;
+  box-shadow: 0 12px 32px rgba(13, 59, 102, 0.18);
 }
 
-/* Card Style Blocks [cite: 307] */
-.card {
-  background: #fff;
-  border: 1px solid #e6e6e6;
-  border-radius: 12px;
-  padding: 20px;
-  margin-top: 16px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
-}
-.project-card {
-  margin-bottom: 20px;
+.hero-badge {
+  background-color: #dbeafe;
+  color: #0d3b66;
+  font-weight: 600;
+  border: 1px solid #bfdbfe;
 }
 
-/* Table [cite: 320, 321] */
-.info-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-top: 10px;
+.custom-navbar {
+  background: rgba(13, 27, 42, 0.92);
+  backdrop-filter: blur(10px);
 }
-.info-table th,
-.info-table td {
-  border: 1px solid #e6e6e6;
-  padding: 10px;
-  text-align: left;
-}
-.info-table th {
-  background: #f2f4ff;
-  width: 28%;
-}
-.info-table tr:nth-child(even) {
-  background: #f8f8f8;
-} /* [cite: 322] */
 
-/* Travel Pages Specific */
-.page-hero h1 {
-  margin-bottom: 6px;
+.navbar-brand {
+  letter-spacing: 0.4px;
 }
-.subtitle {
-  margin-top: 0;
-  color: #555;
-  font-style: italic;
+
+.nav-link {
+  font-weight: 500;
+  transition: 0.2s ease;
 }
-.hero-img {
-  width: 100%;
-  max-height: 450px; /* Increased from 360px to show more of the photo */
+
+.nav-link:hover {
+  color: #9fd3ff !important;
+}
+
+.feature-card,
+.project-card,
+.travel-card,
+.info-card {
+  border: none;
+  border-radius: 18px;
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.feature-card:hover,
+.project-card:hover,
+.travel-card:hover,
+.info-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 35px rgba(15, 23, 42, 0.12) !important;
+}
+
+.profile-card img {
+  height: 360px;
   object-fit: cover;
-  object-position: center top; /* THIS IS THE MAGIC FIX: It anchors the photo to the top! */
-  border-radius: 10px;
-  border: 1px solid #ddd;
-  margin-top: 12px;
-}
-.gallery img {
-  width: 48%;
-  display: inline-block;
-  vertical-align: top;
-  border-radius: 10px;
-  border: 1px solid #ddd;
-  margin-top: 10px;
-}
-.gallery img:first-child {
-  margin-right: 2%;
-}
-.note {
-  color: #666;
-  font-size: 0.95em;
-  margin-top: 10px;
+  object-position: center top;
 }
 
-/* Footer [cite: 231] */
-footer {
-  text-align: center;
-  padding: 20px;
-  background-color: #eef2f6;
-  margin-top: 40px;
-  border-top: 1px solid #ccc;
+.project-card .badge,
+.travel-card .badge {
+  margin-right: 0.35rem;
+  margin-bottom: 0.35rem;
 }
-footer a {
-  color: #0078d4;
+
+.page-banner {
+  background: linear-gradient(135deg, #0d3b66, #1d4ed8);
+  color: white;
+  padding: 100px 0 70px;
+}
+
+.page-banner h1 {
+  font-weight: 700;
+}
+
+.travel-hero-img {
+  width: 100%;
+  height: 540px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 18px;
+}
+
+.gallery-img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 16px;
+}
+
+.table thead th {
+  background-color: #eaf2ff;
+  color: #0d3b66;
+}
+
+.contact-box {
+  background: #ffffff;
+  border-radius: 18px;
+}
+
+.form-control,
+.form-select {
+  border-radius: 10px;
+  padding: 0.75rem 0.9rem;
+}
+
+.form-control:focus,
+.form-select:focus {
+  border-color: #60a5fa;
+  box-shadow: 0 0 0 0.2rem rgba(96, 165, 250, 0.2);
+}
+
+.custom-btn {
+  border-radius: 999px;
+  padding: 0.7rem 1.4rem;
+  font-weight: 600;
+}
+
+.soft-shadow {
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+}
+
+.footer-area {
+  background: #0f172a;
+  color: #e5e7eb;
+}
+
+.footer-area a {
+  color: #93c5fd;
   text-decoration: none;
+}
+
+.footer-area a:hover {
+  color: #dbeafe;
+}
+
+.stat-box {
+  background: #ffffff;
+  border-radius: 16px;
+  text-align: center;
+  padding: 1.4rem 1rem;
+}
+
+.stat-box h3 {
+  color: #0d3b66;
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+}
+
+.timeline-box {
+  border-left: 4px solid #0d6efd;
+  padding-left: 1rem;
+}
+
+.carousel-item img {
+  height: 520px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.modal-content {
+  border-radius: 18px;
+}
+
+/* Custom image focus fixes */
+.cox-carousel-img-1 {
+  object-position: center 22%;
+}
+
+.cox-carousel-img-2 {
+  object-position: center center;
+}
+
+.cox-carousel-img-3 {
+  object-position: center 18%;
+}
+
+.sajek-hero-fix {
+  object-position: center 20%;
+}
+
+.sajek-gallery-img-1 {
+  object-position: center 18%;
+}
+
+.sajek-gallery-img-2 {
+  object-position: center 22%;
+}
+
+@media (max-width: 991px) {
+  .hero-section {
+    min-height: auto;
+    padding-top: 110px;
+    padding-bottom: 70px;
+    text-align: center;
+  }
+
+  .hero-image {
+    width: 210px;
+    height: 210px;
+    margin-bottom: 1.5rem;
+  }
+
+  .gallery-img {
+    height: 240px;
+  }
+
+  .travel-hero-img,
+  .carousel-item img {
+    height: 360px;
+  }
+}
+
+@media (max-width: 576px) {
+  .page-banner {
+    padding: 85px 0 55px;
+  }
+
+  .gallery-img {
+    height: 220px;
+  }
 }

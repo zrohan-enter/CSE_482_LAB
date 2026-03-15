@@ -4,99 +4,253 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sajek Valley | Zawed Bin Tariq</title>
+
+    <!-- Bootstrap CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <header>
-      <div class="header-container">
-        <h1>Zawed Bin Tariq</h1>
-        <nav>
-          <a href="index.html">Home</a>
-          <a href="about.html">About</a>
-          <a href="projects.html">Projects</a>
-          <a href="travel1.html">Cox's Bazar</a>
-          <a class="active" href="travel2.html">Sajek</a>
-        </nav>
-      </div>
-    </header>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark custom-navbar sticky-top">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="index.html">Zawed Bin Tariq</a>
 
-    <main class="container">
-      <section class="page-hero text-center">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navMenu"
+          aria-controls="navMenu"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navMenu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="projects.html">Projects</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="travel1.html">Cox's Bazar</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link active" href="travel2.html">Sajek</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Page Banner -->
+    <section class="page-banner text-center">
+      <div class="container">
         <h1>Sajek Valley</h1>
-        <p class="subtitle">
+        <p class="lead">
           Clouds, hills, and calm — a perfect escape into nature.
         </p>
+      </div>
+    </section>
+
+    <main class="container py-5">
+      <!-- Hero Image -->
+      <div class="text-center mb-5">
         <img
-          class="hero-img"
           src="images/sajek1.jpg"
-          alt="Sajek Valley hills and clouds"
-          style="object-position: center 15%"
+          class="img-fluid rounded shadow"
+          alt="Sajek valley view"
+          style="
+            width: 100%;
+            max-height: 520px;
+            object-fit: cover;
+            object-position: center 20%;
+          "
         />
-      </section>
+      </div>
 
-      <section class="card">
-        <h2>Why I Loved This Place</h2>
-        <p>
-          Sajek Valley was one of the most beautiful places I have visited in
-          Bangladesh. The hill roads, the fresh air, and the clouds moving
-          across the mountains made it feel like a completely different world.
-          Early mornings were the best — the view was quiet, cool, and
-          unforgettable.
-        </p>
-      </section>
+      <!-- About -->
+      <div class="card shadow mb-5">
+        <div class="card-body">
+          <h2 class="section-title">Why I Loved This Place</h2>
 
-      <section class="card">
-        <h2>Top 5 Things To Do</h2>
-        <ol>
-          <li>Wake up early to watch the cloud view from the viewpoint.</li>
-          <li>Explore nearby hills and small trails (safely).</li>
-          <li>Try local hill foods and tea from local shops.</li>
-          <li>Take scenic photos during sunrise and golden hour.</li>
-          <li>
-            Enjoy peaceful night time — cool weather and quiet surroundings.
-          </li>
-        </ol>
-      </section>
+          <p>
+            Sajek Valley was one of the most beautiful places I have visited in
+            Bangladesh. The hill roads, fresh air, and clouds moving across the
+            mountains made the experience unforgettable. Early mornings were the
+            best moments — quiet, cool, and surrounded by nature.
+          </p>
 
-      <section class="card">
-        <h2>Quick Travel Info</h2>
-        <table class="info-table">
-          <tr>
-            <th>Best Season</th>
-            <td>October to March (clear views, less rain)</td>
-          </tr>
-          <tr>
-            <th>Budget</th>
-            <td>Medium (transport + stay can increase in peak season)</td>
-          </tr>
-          <tr>
-            <th>Transport</th>
-            <td>Khagrachhari route; then local transport to Sajek</td>
-          </tr>
-          <tr>
-            <th>Food</th>
-            <td>Local hill meals, snacks, tea/coffee</td>
-          </tr>
-        </table>
-      </section>
-
-      <section class="card text-center">
-        <h2>Photo Moments</h2>
-        <div class="gallery">
-          <img src="images/sajek2.jpg" alt="Sajek travel photo" />
-          <img src="images/sajek1.jpg" alt="Sajek valley view photo" />
+          <div class="mt-3">
+            <span class="badge bg-primary">Nature</span>
+            <span class="badge bg-success">Hills</span>
+            <span class="badge bg-warning text-dark">Photography</span>
+          </div>
         </div>
-        <p class="note">All photos are from my own trip.</p>
-      </section>
+      </div>
+
+      <!-- Activities -->
+      <div class="card shadow mb-5">
+        <div class="card-body">
+          <h2 class="section-title">Top 5 Things To Do</h2>
+
+          <ol class="mt-3">
+            <li>Watch the cloud view from the viewpoint early morning.</li>
+            <li>Explore nearby hills and safe walking trails.</li>
+            <li>Try local hill foods and tea.</li>
+            <li>Take sunrise and golden-hour photos.</li>
+            <li>Enjoy peaceful nighttime in cool weather.</li>
+          </ol>
+        </div>
+      </div>
+
+      <!-- Travel Info -->
+      <div class="card shadow mb-5">
+        <div class="card-body">
+          <h2 class="section-title">Quick Travel Info</h2>
+
+          <table class="table table-bordered table-striped mt-3">
+            <tr>
+              <th>Best Season</th>
+              <td>October to March (clear views)</td>
+            </tr>
+
+            <tr>
+              <th>Budget</th>
+              <td>Medium (transport + accommodation)</td>
+            </tr>
+
+            <tr>
+              <th>Transport</th>
+              <td>Khagrachhari route then local transport</td>
+            </tr>
+
+            <tr>
+              <th>Food</th>
+              <td>Local hill meals, tea, snacks</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <!-- Gallery -->
+      <div class="card shadow mb-5 text-center">
+        <div class="card-body">
+          <h2 class="section-title">Photo Moments</h2>
+
+          <div class="row mt-4">
+            <div class="col-md-6 mb-3">
+              <img
+                src="images/sajek2.jpg"
+                class="img-fluid rounded"
+                alt="Sajek travel photo"
+                style="
+                  width: 100%;
+                  height: 300px;
+                  object-fit: cover;
+                  object-position: center 18%;
+                "
+              />
+            </div>
+
+            <div class="col-md-6 mb-3">
+              <img
+                src="images/sajek1.jpg"
+                class="img-fluid rounded"
+                alt="Sajek valley view"
+                style="
+                  width: 100%;
+                  height: 300px;
+                  object-fit: cover;
+                  object-position: center 22%;
+                "
+              />
+            </div>
+          </div>
+
+          <p class="text-muted">All photos are from my own trip.</p>
+        </div>
+      </div>
+
+      <!-- Contact Form -->
+      <div class="card shadow contact-box">
+        <div class="card-body p-4">
+          <h2 class="section-title text-center mb-4">Contact Me</h2>
+
+          <form>
+            <div class="row">
+              <div class="col-md-6 mb-3">
+                <label class="form-label">Full Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Enter your name"
+                />
+              </div>
+
+              <div class="col-md-6 mb-3">
+                <label class="form-label">Email</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  placeholder="Enter your email"
+                />
+              </div>
+            </div>
+
+            <div class="mb-3">
+              <label class="form-label">Subject</label>
+              <input type="text" class="form-control" placeholder="Subject" />
+            </div>
+
+            <div class="mb-3">
+              <label class="form-label">Message</label>
+              <textarea
+                class="form-control"
+                rows="4"
+                placeholder="Write your message"
+              ></textarea>
+            </div>
+
+            <div class="text-center">
+              <button type="submit" class="btn btn-primary custom-btn">
+                Send Message
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
     </main>
 
-    <footer>
-      <p>
-        &copy; 2026 Zawed Bin Tariq |
-        <a href="mailto:zawed.tariq@northsouth.edu"
-          >zawed.tariq@northsouth.edu</a
-        >
-      </p>
+    <!-- Footer -->
+    <footer class="footer-area text-center py-4">
+      <div class="container">
+        <p class="mb-1">&copy; 2026 Zawed Bin Tariq</p>
+
+        <p>
+          <a href="mailto:zawed.tariq@northsouth.edu">
+            zawed.tariq@northsouth.edu
+          </a>
+        </p>
+      </div>
     </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>

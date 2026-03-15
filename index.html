@@ -1,48 +1,299 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Zawed Bin Tariq | Portfolio</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-    <header>
-        <div class="header-container">
-            <h1>Zawed Bin Tariq</h1>
-            <nav>
-                <a class="active" href="index.html">Home</a>
-                <a href="about.html">About</a>
-                <a href="projects.html">Projects</a>
-                <a href="travel1.html">Cox's Bazar</a>
-                <a href="travel2.html">Sajek</a>
-            </nav>
+
+    <!-- Bootstrap CSS CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Navbar Start -->
+    <nav
+      class="navbar navbar-expand-lg navbar-dark custom-navbar sticky-top shadow-sm"
+    >
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="index.html">Zawed Bin Tariq</a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mainNavbar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="mainNavbar">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="projects.html">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="travel1.html">Cox's Bazar</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="travel2.html">Sajek</a>
+            </li>
+          </ul>
         </div>
-    </header>
+      </div>
+    </nav>
+    <!-- Navbar End -->
 
-    <main class="container text-center">
-        <section class="hero-section">
-            <img src="images/profile.jpg" alt="Zawed Bin Tariq" class="profile-img">
-            <h2>Computer Science & Engineering Undergraduate</h2>
-            <p class="subtitle">North South University | AI/ML, Backend & Security Enthusiast</p>
-            <p>I am driven by a passion to transition from theoretical logic to tangible innovation. My journey took a decisive turn when I led the development of a Machine Learning-based AI Chatbot, which taught me the power of intelligent systems.</p>
-            <br>
-            <a href="projects.html" class="btn">View My Projects</a>
-        </section>
+    <!-- Hero Section Start -->
+    <section class="hero-section">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-6 text-center text-lg-start">
+            <span class="badge rounded-pill hero-badge px-3 py-2 mb-3"
+              >CSE Undergraduate • AI/ML • Backend • Security</span
+            >
+            <h1 class="display-5 fw-bold mb-3">Hello, I'm Zawed Bin Tariq</h1>
+            <h2 class="h4 text-secondary mb-3">
+              Computer Science & Engineering Undergraduate
+            </h2>
+            <p class="lead mb-4">
+              I am passionate about turning ideas into practical digital
+              solutions. My interest areas include AI/ML, backend development,
+              databases, and system security.
+            </p>
+            <p class="mb-4">
+              One of the turning points in my learning journey was developing a
+              Machine Learning-based chatbot. That experience taught me how
+              software can become both intelligent and useful in real-world
+              applications.
+            </p>
 
-        <section class="card text-left">
-            <h2>Quick Highlights</h2>
-            <ul>
-                <li><strong>AI Multilingual Modular Chatbot:</strong> Engineered a modular AI chatbot supporting multilingual dialogue using Python and NLP.</li>
-                <li><strong>Secure Doctor Platform:</strong> Architected a PostgreSQL & Node.js scheduling system preventing double booking.</li>
-                <li><strong>Linux Server Hardening:</strong> Secured multi-service infrastructure with SSH key authentication.</li>
-            </ul>
-        </section>
-    </main>
+            <div
+              class="d-flex flex-column flex-sm-row gap-3 justify-content-center justify-content-lg-start"
+            >
+              <a href="projects.html" class="btn btn-primary custom-btn"
+                >View My Projects</a
+              >
+              <a href="about.html" class="btn btn-outline-dark custom-btn"
+                >Learn More About Me</a
+              >
+            </div>
+          </div>
 
-    <footer>
-        <p>&copy; 2026 Zawed Bin Tariq | <a href="mailto:zawed.tariq@northsouth.edu">zawed.tariq@northsouth.edu</a> | +880 1841 519 387</p>
-        <p>GitHub: <a href="https://github.com/zrohan-enter" target="_blank">github.com/zrohan-enter</a></p>
+          <div class="col-lg-6 text-center">
+            <img
+              src="images/profile.jpg"
+              alt="Zawed Bin Tariq"
+              class="hero-image img-fluid"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Hero Section End -->
+
+    <!-- Intro Alert -->
+    <section class="pb-2">
+      <div class="container">
+        <div
+          class="alert alert-primary shadow-sm border-0 rounded-4"
+          role="alert"
+        >
+          <strong>Welcome to my personal portfolio website.</strong> This
+          website has been redesigned using Bootstrap components and utility
+          classes to create a more modern and responsive appearance.
+        </div>
+      </div>
+    </section>
+
+    <!-- Quick Stats -->
+    <section class="py-4">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="stat-box soft-shadow h-100">
+              <h3>3+</h3>
+              <p class="mb-0 text-muted">Featured Projects</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="stat-box soft-shadow h-100">
+              <h3>2</h3>
+              <p class="mb-0 text-muted">Travel Experience Pages</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="stat-box soft-shadow h-100">
+              <h3>100%</h3>
+              <p class="mb-0 text-muted">Responsive Bootstrap Layout</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Profile Card Section -->
+    <section class="py-5">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="section-title">Profile Overview</h2>
+          <p class="section-subtitle">
+            A short summary of my academic focus, technical interests, and
+            project-based learning journey.
+          </p>
+        </div>
+
+        <div
+          class="card profile-card shadow-lg border-0 rounded-4 overflow-hidden"
+        >
+          <div class="row g-0 align-items-center">
+            <div class="col-md-4">
+              <img
+                src="images/profile.jpg"
+                alt="Zawed Bin Tariq"
+                class="img-fluid w-100 h-100"
+              />
+            </div>
+            <div class="col-md-8">
+              <div class="card-body p-4 p-lg-5">
+                <h3 class="card-title fw-bold mb-3">Zawed Bin Tariq</h3>
+                <p class="card-text text-muted mb-3">North South University</p>
+                <p class="card-text">
+                  I enjoy learning by building. My work usually focuses on
+                  solving practical problems through structured backend systems,
+                  database design, and intelligent applications.
+                </p>
+
+                <div class="mb-3">
+                  <span class="badge text-bg-primary">Python</span>
+                  <span class="badge text-bg-secondary">Node.js</span>
+                  <span class="badge text-bg-success">PostgreSQL</span>
+                  <span class="badge text-bg-info">Bootstrap</span>
+                  <span class="badge text-bg-dark">Security</span>
+                </div>
+
+                <a href="about.html" class="btn btn-outline-primary custom-btn"
+                  >Read Full About Section</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Highlights Section -->
+    <section class="py-5">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="section-title">Quick Highlights</h2>
+          <p class="section-subtitle">
+            Some of the areas where I have worked through academic and practical
+            projects.
+          </p>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="card feature-card shadow-sm h-100">
+              <div class="card-body p-4">
+                <h4 class="card-title">AI Chatbot</h4>
+                <p class="card-text">
+                  Built a multilingual modular chatbot using Python and NLP
+                  concepts to support more flexible interaction.
+                </p>
+                <span class="badge text-bg-primary">AI/ML</span>
+                <span class="badge text-bg-light border text-dark">Python</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card feature-card shadow-sm h-100">
+              <div class="card-body p-4">
+                <h4 class="card-title">Doctor Platform</h4>
+                <p class="card-text">
+                  Designed a secure appointment and scheduling platform using
+                  PostgreSQL and Node.js.
+                </p>
+                <span class="badge text-bg-success">Backend</span>
+                <span class="badge text-bg-light border text-dark"
+                  >Database</span
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card feature-card shadow-sm h-100">
+              <div class="card-body p-4">
+                <h4 class="card-title">Linux Hardening</h4>
+                <p class="card-text">
+                  Explored Linux server protection practices including
+                  authentication control and secure access setup.
+                </p>
+                <span class="badge text-bg-dark">Security</span>
+                <span class="badge text-bg-light border text-dark">Linux</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="pb-5">
+      <div class="container">
+        <div class="card border-0 shadow-sm rounded-4 bg-white">
+          <div class="card-body p-4 p-lg-5 text-center">
+            <h3 class="fw-bold mb-3">Want to explore more?</h3>
+            <p class="text-muted mb-4">
+              Visit the projects page to see my work, or explore the travel
+              pages to view some of my favorite places.
+            </p>
+            <a href="projects.html" class="btn btn-primary custom-btn me-2"
+              >Projects</a
+            >
+            <a href="travel1.html" class="btn btn-outline-secondary custom-btn"
+              >Travel Gallery</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Start -->
+    <footer class="footer-area py-4 mt-4">
+      <div class="container text-center">
+        <p class="mb-2">&copy; 2026 Zawed Bin Tariq</p>
+        <p class="mb-2">
+          Email:
+          <a href="mailto:zawed.tariq@northsouth.edu"
+            >zawed.tariq@northsouth.edu</a
+          >
+          | Phone: +880 1841 519 387
+        </p>
+        <p class="mb-0">
+          GitHub:
+          <a href="https://github.com/zrohan-enter" target="_blank"
+            >github.com/zrohan-enter</a
+          >
+        </p>
+      </div>
     </footer>
-</body>
+    <!-- Footer End -->
+
+    <!-- Bootstrap JS Bundle CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
 </html>

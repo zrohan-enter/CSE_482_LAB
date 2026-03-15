@@ -4,90 +4,191 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About | Zawed Bin Tariq</title>
+
+    <!-- Bootstrap CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <header>
-      <div class="header-container">
-        <h1>Zawed Bin Tariq</h1>
-        <nav>
-          <a href="index.html">Home</a>
-          <a class="active" href="about.html">About</a>
-          <a href="projects.html">Projects</a>
-          <a href="travel1.html">Cox's Bazar</a>
-          <a href="travel2.html">Sajek</a>
-        </nav>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark custom-navbar sticky-top">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="index.html">Zawed Bin Tariq</a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navMenu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navMenu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link active" href="about.html">About</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="projects.html">Projects</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="travel1.html">Cox's Bazar</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="travel2.html">Sajek</a>
+            </li>
+          </ul>
+        </div>
       </div>
-    </header>
+    </nav>
 
-    <main class="container">
-      <section class="card">
-        <h2>Education</h2>
-        <table class="info-table">
-          <tr>
-            <th>Degree</th>
-            <th>Institution</th>
-            <th>Year</th>
-            <th>Details</th>
-          </tr>
-          <tr>
-            <td>B.Sc. in Computer Science & Engineering</td>
-            <td>North South University</td>
-            <td>2023 - 2027</td>
-            <td>Credits Completed: 76</td>
-          </tr>
-          <tr>
-            <td>Higher Secondary Certificate (HSC)</td>
-            <td>RAJUK Uttara Model College</td>
-            <td>2020 - 2022</td>
-            <td>GPA: 5.00 (Golden A+)</td>
-          </tr>
-        </table>
-      </section>
+    <!-- Page Banner -->
+    <section class="page-banner text-center">
+      <div class="container">
+        <h1>About Me</h1>
+        <p class="lead">Education, Skills and Personal Background</p>
+      </div>
+    </section>
 
-      <section class="card">
-        <h2>Skills & Certifications</h2>
-        <ul>
-          <li>
-            <strong>Programming:</strong> Python, C/C++, JavaScript, PHP, SQL,
-            Bash
-          </li>
-          <li>
-            <strong>Backend & DB:</strong> Node.js, Express, PostgreSQL, MySQL
-          </li>
-          <li>
-            <strong>Certifications:</strong> Cisco Certified Network Associate
-            (CCNA), Machine Learning Specialization (Coursera), Certified
-            Ethical Hacker (CEH)
-          </li>
-        </ul>
-      </section>
+    <main class="container py-5">
+      <!-- Intro Alert -->
+      <div class="alert alert-info shadow-sm rounded-3">
+        This page summarizes my educational background, technical skills and
+        some personal interests.
+      </div>
 
-      <section class="card">
-        <h2>Personal Information</h2>
-        <p>
-          <strong>Languages:</strong> English, Bengali (Native), Urdu (A2),
-          Japanese (N5)
-        </p>
-        <p>
-          <strong>Hobbies:</strong> Listening to Bengali Folk Songs
-          (Dwijendralal Ray) and Indian Pop (A.R. Rahman), reading fiction by
-          Humayun Ahmed and H. Rider Haggard.
-        </p>
-        <p>
-          <strong>Future Dreams:</strong> Walk in villages where history
-          whispers, and watch the endless sky meet the sea.
-        </p>
-      </section>
+      <!-- Education Section -->
+      <div class="card shadow mb-5">
+        <div class="card-body">
+          <h2 class="section-title">Education</h2>
+
+          <table class="table table-bordered table-striped table-hover mt-3">
+            <thead>
+              <tr>
+                <th>Degree</th>
+                <th>Institution</th>
+                <th>Year</th>
+                <th>Details</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>B.Sc. in Computer Science & Engineering</td>
+                <td>North South University</td>
+                <td>2023 - 2027</td>
+                <td>Credits Completed: 76</td>
+              </tr>
+
+              <tr>
+                <td>Higher Secondary Certificate (HSC)</td>
+                <td>RAJUK Uttara Model College</td>
+                <td>2020 - 2022</td>
+                <td>GPA: 5.00 (Golden A+)</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- Skills Section -->
+      <div class="card shadow mb-5">
+        <div class="card-body">
+          <h2 class="section-title">Skills & Certifications</h2>
+
+          <div class="row mt-3">
+            <div class="col-md-6">
+              <h5>Programming Languages</h5>
+
+              <span class="badge bg-primary">Python</span>
+              <span class="badge bg-secondary">C/C++</span>
+              <span class="badge bg-success">JavaScript</span>
+              <span class="badge bg-dark">PHP</span>
+              <span class="badge bg-info text-dark">SQL</span>
+              <span class="badge bg-warning text-dark">Bash</span>
+            </div>
+
+            <div class="col-md-6">
+              <h5>Backend & Database</h5>
+
+              <span class="badge bg-primary">Node.js</span>
+              <span class="badge bg-success">Express</span>
+              <span class="badge bg-dark">PostgreSQL</span>
+              <span class="badge bg-secondary">MySQL</span>
+            </div>
+          </div>
+
+          <div class="mt-4">
+            <h5>Certifications</h5>
+
+            <ul class="list-group">
+              <li class="list-group-item">
+                Cisco Certified Network Associate (CCNA)
+              </li>
+
+              <li class="list-group-item">
+                Machine Learning Specialization (Coursera)
+              </li>
+
+              <li class="list-group-item">Certified Ethical Hacker (CEH)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Personal Information -->
+      <div class="card shadow">
+        <div class="card-body">
+          <h2 class="section-title">Personal Information</h2>
+
+          <p>
+            <strong>Languages:</strong>
+            English, Bengali (Native), Urdu (A2), Japanese (N5)
+          </p>
+
+          <p>
+            <strong>Hobbies:</strong>
+            Listening to Bengali Folk Songs (Dwijendralal Ray) and Indian Pop
+            (A.R. Rahman), reading fiction by Humayun Ahmed and H. Rider
+            Haggard.
+          </p>
+
+          <p>
+            <strong>Future Dreams:</strong>
+            Walk in villages where history whispers, and watch the endless sky
+            meet the sea.
+          </p>
+        </div>
+      </div>
     </main>
 
-    <footer>
-      <p>
-        &copy; 2026 Zawed Bin Tariq |
-        <a href="mailto:zawed.tariq@northsouth.edu"
-          >zawed.tariq@northsouth.edu</a
-        >
-      </p>
+    <!-- Footer -->
+    <footer class="footer-area text-center py-4">
+      <div class="container">
+        <p class="mb-1">&copy; 2026 Zawed Bin Tariq</p>
+
+        <p>
+          <a href="mailto:zawed.tariq@northsouth.edu">
+            zawed.tariq@northsouth.edu
+          </a>
+        </p>
+      </div>
     </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
