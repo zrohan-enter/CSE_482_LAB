@@ -11,12 +11,21 @@
       rel="stylesheet"
     />
 
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark custom-navbar sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-dark custom-navbar fixed-top">
       <div class="container">
         <a class="navbar-brand fw-bold" href="index.html">Zawed Bin Tariq</a>
 
@@ -33,7 +42,7 @@
         </button>
 
         <div class="collapse navbar-collapse" id="navMenu">
-          <ul class="navbar-nav ms-auto">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-center text-lg-start">
             <li class="nav-item">
               <a class="nav-link" href="index.html">Home</a>
             </li>
@@ -43,7 +52,7 @@
             </li>
 
             <li class="nav-item">
-              <a class="nav-link" href="projects.html">Projects</a>
+              <a class="nav-link" href="education.html">Education</a>
             </li>
 
             <li class="nav-item">
@@ -53,143 +62,225 @@
             <li class="nav-item">
               <a class="nav-link active" href="travel2.html">Sajek</a>
             </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
           </ul>
         </div>
       </div>
     </nav>
 
     <!-- Page Banner -->
-    <section class="page-banner text-center">
+    <section class="page-banner text-center position-relative">
       <div class="container">
+        <span class="badge text-bg-light text-dark rounded-pill px-3 py-2 mb-3">
+          <i class="bi bi-tree-fill me-1"></i> Responsive Travel Page
+        </span>
         <h1>Sajek Valley</h1>
-        <p class="lead">
-          Clouds, hills, and calm — a perfect escape into nature.
+        <p class="lead mx-auto" style="max-width: 760px">
+          Clouds, hills, fresh air, and calm surroundings — a perfect escape
+          into nature.
         </p>
       </div>
     </section>
 
-    <main class="container py-5">
-      <!-- Hero Image -->
-      <div class="text-center mb-5">
-        <img
-          src="images/sajek1.jpg"
-          class="img-fluid rounded shadow"
-          alt="Sajek valley view"
-          style="
-            width: 100%;
-            max-height: 520px;
-            object-fit: cover;
-            object-position: center 20%;
-          "
-        />
+    <!-- Intro Alert -->
+    <section class="py-5">
+      <div class="container">
+        <div
+          class="alert alert-success d-flex gap-3 align-items-start reveal-up"
+          role="alert"
+        >
+          <i class="bi bi-check-circle-fill fs-4"></i>
+          <div>
+            <strong>Enhanced Page:</strong>
+            This page now includes a responsive carousel, responsive images,
+            improved cards, responsive form layout, buttons, badges, and modern
+            transitions.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <main class="container pb-5">
+      <!-- Carousel -->
+      <div
+        id="sajekCarousel"
+        class="carousel slide mb-5 shadow rounded overflow-hidden reveal-up"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#sajekCarousel"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#sajekCarousel"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+        </div>
+
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="images/sajek1.jpg"
+              class="d-block w-100 sajek-hero-fix"
+              alt="Sajek valley view"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Cloudy Hill View</h5>
+              <p>Fresh air, calm nature, and beautiful scenery.</p>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <img
+              src="images/sajek2.jpg"
+              class="d-block w-100 sajek-gallery-img-1"
+              alt="Sajek travel photo"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Travel Memory</h5>
+              <p>One of the most peaceful places I have visited.</p>
+            </div>
+          </div>
+        </div>
+
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#sajekCarousel"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#sajekCarousel"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
 
       <!-- About -->
-      <div class="card shadow mb-5">
-        <div class="card-body">
-          <h2 class="section-title">Why I Loved This Place</h2>
+      <div class="card info-card border-0 mb-5 reveal-up">
+        <div class="card-body p-4 p-lg-5">
+          <div
+            class="flex flex-col md:flex-row md:items-center md:justify-between gap-3 mb-3"
+          >
+            <h2 class="section-title mb-0">Why I Loved This Place</h2>
+            <div class="d-flex flex-wrap gap-2">
+              <span class="badge bg-primary">Nature</span>
+              <span class="badge bg-success">Hills</span>
+              <span class="badge bg-warning text-dark">Photography</span>
+            </div>
+          </div>
 
-          <p>
+          <p class="mb-3">
             Sajek Valley was one of the most beautiful places I have visited in
             Bangladesh. The hill roads, fresh air, and clouds moving across the
-            mountains made the experience unforgettable. Early mornings were the
-            best moments — quiet, cool, and surrounded by nature.
+            mountains made the experience unforgettable.
           </p>
 
-          <div class="mt-3">
-            <span class="badge bg-primary">Nature</span>
-            <span class="badge bg-success">Hills</span>
-            <span class="badge bg-warning text-dark">Photography</span>
-          </div>
+          <p class="mb-0">
+            Early mornings were the best moments — quiet, cool, and surrounded
+            by nature. It is a place where every view feels peaceful and
+            inspiring.
+          </p>
         </div>
       </div>
 
       <!-- Activities -->
-      <div class="card shadow mb-5">
-        <div class="card-body">
+      <div class="card info-card border-0 mb-5 reveal-up reveal-delay-1">
+        <div class="card-body p-4 p-lg-5">
           <h2 class="section-title">Top 5 Things To Do</h2>
 
-          <ol class="mt-3">
-            <li>Watch the cloud view from the viewpoint early morning.</li>
-            <li>Explore nearby hills and safe walking trails.</li>
-            <li>Try local hill foods and tea.</li>
-            <li>Take sunrise and golden-hour photos.</li>
+          <ol class="mt-3 mb-0 ps-3">
+            <li class="mb-2">
+              Watch the cloud view from the viewpoint early morning.
+            </li>
+            <li class="mb-2">Explore nearby hills and safe walking trails.</li>
+            <li class="mb-2">Try local hill foods and tea.</li>
+            <li class="mb-2">Take sunrise and golden-hour photographs.</li>
             <li>Enjoy peaceful nighttime in cool weather.</li>
           </ol>
         </div>
       </div>
 
       <!-- Travel Info -->
-      <div class="card shadow mb-5">
-        <div class="card-body">
+      <div class="card info-card border-0 mb-5 reveal-up reveal-delay-2">
+        <div class="card-body p-4 p-lg-5">
           <h2 class="section-title">Quick Travel Info</h2>
 
-          <table class="table table-bordered table-striped mt-3">
-            <tr>
-              <th>Best Season</th>
-              <td>October to March (clear views)</td>
-            </tr>
-
-            <tr>
-              <th>Budget</th>
-              <td>Medium (transport + accommodation)</td>
-            </tr>
-
-            <tr>
-              <th>Transport</th>
-              <td>Khagrachhari route then local transport</td>
-            </tr>
-
-            <tr>
-              <th>Food</th>
-              <td>Local hill meals, tea, snacks</td>
-            </tr>
-          </table>
+          <div class="table-responsive mt-3">
+            <table class="table table-bordered table-striped align-middle">
+              <tbody>
+                <tr>
+                  <th>Best Season</th>
+                  <td>October to March (clear views)</td>
+                </tr>
+                <tr>
+                  <th>Budget</th>
+                  <td>Medium (transport and accommodation)</td>
+                </tr>
+                <tr>
+                  <th>Transport</th>
+                  <td>Khagrachhari route and then local transport</td>
+                </tr>
+                <tr>
+                  <th>Food</th>
+                  <td>Local hill meals, tea, and snacks</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
       </div>
 
       <!-- Gallery -->
-      <div class="card shadow mb-5 text-center">
-        <div class="card-body">
+      <div
+        class="card info-card border-0 mb-5 text-center reveal-up reveal-delay-3"
+      >
+        <div class="card-body p-4 p-lg-5">
           <h2 class="section-title">Photo Moments</h2>
 
-          <div class="row mt-4">
-            <div class="col-md-6 mb-3">
+          <div class="row mt-4 g-4">
+            <div class="col-md-6">
               <img
                 src="images/sajek2.jpg"
-                class="img-fluid rounded"
+                class="img-fluid rounded gallery-img sajek-gallery-img-1"
                 alt="Sajek travel photo"
-                style="
-                  width: 100%;
-                  height: 300px;
-                  object-fit: cover;
-                  object-position: center 18%;
-                "
               />
             </div>
 
-            <div class="col-md-6 mb-3">
+            <div class="col-md-6">
               <img
                 src="images/sajek1.jpg"
-                class="img-fluid rounded"
+                class="img-fluid rounded gallery-img sajek-gallery-img-2"
                 alt="Sajek valley view"
-                style="
-                  width: 100%;
-                  height: 300px;
-                  object-fit: cover;
-                  object-position: center 22%;
-                "
               />
             </div>
           </div>
 
-          <p class="text-muted">All photos are from my own trip.</p>
+          <p class="text-muted mt-3 mb-0">All photos are from my own trip.</p>
         </div>
       </div>
 
       <!-- Contact Form -->
-      <div class="card shadow contact-box">
-        <div class="card-body p-4">
+      <div class="card contact-box border-0 reveal-up reveal-delay-4">
+        <div class="card-body p-4 p-lg-5">
           <h2 class="section-title text-center mb-4">Contact Me</h2>
 
           <form>
@@ -228,8 +319,11 @@
             </div>
 
             <div class="text-center">
-              <button type="submit" class="btn btn-primary custom-btn">
-                Send Message
+              <button
+                type="submit"
+                class="btn btn-primary custom-btn w-100 w-md-auto"
+              >
+                <i class="bi bi-send-fill me-2"></i>Send Message
               </button>
             </div>
           </form>
@@ -241,11 +335,10 @@
     <footer class="footer-area text-center py-4">
       <div class="container">
         <p class="mb-1">&copy; 2026 Zawed Bin Tariq</p>
-
-        <p>
-          <a href="mailto:zawed.tariq@northsouth.edu">
-            zawed.tariq@northsouth.edu
-          </a>
+        <p class="mb-0">
+          <a href="mailto:zawed.tariq@northsouth.edu"
+            >zawed.tariq@northsouth.edu</a
+          >
         </p>
       </div>
     </footer>

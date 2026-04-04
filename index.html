@@ -2,45 +2,57 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Zawed Bin Tariq | Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Home | Zawed Bin Tariq</title>
 
-    <!-- Bootstrap CSS CDN -->
+    <!-- Bootstrap CSS -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
 
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <!-- Navbar Start -->
-    <nav
-      class="navbar navbar-expand-lg navbar-dark custom-navbar sticky-top shadow-sm"
-    >
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg custom-navbar navbar-dark fixed-top">
       <div class="container">
-        <a class="navbar-brand fw-bold" href="index.html">Zawed Bin Tariq</a>
+        <a class="navbar-brand text-white fw-bold" href="index.html"
+          >Zawed Bin Tariq</a
+        >
 
         <button
           class="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
-          data-bs-target="#mainNavbar"
+          data-bs-target="#mainNav"
+          aria-controls="mainNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="collapse navbar-collapse" id="mainNavbar">
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-center text-lg-start">
             <li class="nav-item">
               <a class="nav-link active" href="index.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="about.html">About</a>
+              <a class="nav-link" href="about.html">About Me</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="projects.html">Projects</a>
+              <a class="nav-link" href="education.html">Education</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="travel1.html">Cox's Bazar</a>
@@ -48,202 +60,205 @@
             <li class="nav-item">
               <a class="nav-link" href="travel2.html">Sajek</a>
             </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact Me</a>
+            </li>
           </ul>
         </div>
       </div>
     </nav>
-    <!-- Navbar End -->
 
-    <!-- Hero Section Start -->
-    <section class="hero-section">
+    <!-- Hero Section -->
+    <header class="hero-section">
       <div class="container">
-        <div class="row align-items-center g-5">
-          <div class="col-lg-6 text-center text-lg-start">
-            <span class="badge rounded-pill hero-badge px-3 py-2 mb-3"
-              >CSE Undergraduate • AI/ML • Backend • Security</span
-            >
-            <h1 class="display-5 fw-bold mb-3">Hello, I'm Zawed Bin Tariq</h1>
-            <h2 class="h4 text-secondary mb-3">
-              Computer Science & Engineering Undergraduate
+        <div class="row align-items-center gy-5">
+          <div class="col-lg-7">
+            <span class="badge hero-badge rounded-pill px-3 py-2 mb-3">
+              <i class="bi bi-stars me-1"></i> Responsive Portfolio Website
+            </span>
+
+            <h1 class="display-4 fw-bold mb-3">
+              Hi, I am <span class="text-primary">Zawed Bin Tariq</span>
+            </h1>
+
+            <h2 class="h3 text-secondary mb-3">
+              CSE Student • Learner • Future Web Developer
             </h2>
-            <p class="lead mb-4">
-              I am passionate about turning ideas into practical digital
-              solutions. My interest areas include AI/ML, backend development,
-              databases, and system security.
+
+            <p class="lead text-secondary mb-3">
+              Welcome to my responsive portfolio website. This project is built
+              with <strong>Bootstrap</strong>, enhanced with
+              <strong>Tailwind utility classes</strong>, and improved using
+              smooth animations, transitions, and a mobile-friendly layout.
             </p>
-            <p class="mb-4">
-              One of the turning points in my learning journey was developing a
-              Machine Learning-based chatbot. That experience taught me how
-              software can become both intelligent and useful in real-world
-              applications.
+
+            <p class="mb-4 text-muted">
+              Explore my profile, education, travel memories, and contact page
+              through a clean responsive navigation system.
             </p>
+
+            <div class="d-flex flex-column flex-sm-row gap-3">
+              <a href="about.html" class="btn btn-primary custom-btn px-4">
+                <i class="bi bi-person-circle me-2"></i>Explore Profile
+              </a>
+
+              <button
+                type="button"
+                class="btn btn-outline-dark custom-btn px-4"
+                data-bs-toggle="modal"
+                data-bs-target="#welcomeModal"
+              >
+                <i class="bi bi-info-circle me-2"></i>View Portfolio Info
+              </button>
+            </div>
 
             <div
-              class="d-flex flex-column flex-sm-row gap-3 justify-content-center justify-content-lg-start"
+              class="mt-4 d-flex flex-wrap gap-2 justify-content-center justify-content-lg-start"
             >
-              <a href="projects.html" class="btn btn-primary custom-btn"
-                >View My Projects</a
+              <span class="badge text-bg-primary">Bootstrap</span>
+              <span class="badge text-bg-success">Responsive Design</span>
+              <span class="badge text-bg-warning text-dark"
+                >Tailwind Utilities</span
               >
-              <a href="about.html" class="btn btn-outline-dark custom-btn"
-                >Learn More About Me</a
-              >
+              <span class="badge text-bg-danger">Animations</span>
             </div>
           </div>
 
-          <div class="col-lg-6 text-center">
-            <img
-              src="images/profile.jpg"
-              alt="Zawed Bin Tariq"
-              class="hero-image img-fluid"
-            />
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Hero Section End -->
-
-    <!-- Intro Alert -->
-    <section class="pb-2">
-      <div class="container">
-        <div
-          class="alert alert-primary shadow-sm border-0 rounded-4"
-          role="alert"
-        >
-          <strong>Welcome to my personal portfolio website.</strong> This
-          website has been redesigned using Bootstrap components and utility
-          classes to create a more modern and responsive appearance.
-        </div>
-      </div>
-    </section>
-
-    <!-- Quick Stats -->
-    <section class="py-4">
-      <div class="container">
-        <div class="row g-4">
-          <div class="col-md-4">
-            <div class="stat-box soft-shadow h-100">
-              <h3>3+</h3>
-              <p class="mb-0 text-muted">Featured Projects</p>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="stat-box soft-shadow h-100">
-              <h3>2</h3>
-              <p class="mb-0 text-muted">Travel Experience Pages</p>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="stat-box soft-shadow h-100">
-              <h3>100%</h3>
-              <p class="mb-0 text-muted">Responsive Bootstrap Layout</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Profile Card Section -->
-    <section class="py-5">
-      <div class="container">
-        <div class="text-center mb-5">
-          <h2 class="section-title">Profile Overview</h2>
-          <p class="section-subtitle">
-            A short summary of my academic focus, technical interests, and
-            project-based learning journey.
-          </p>
-        </div>
-
-        <div
-          class="card profile-card shadow-lg border-0 rounded-4 overflow-hidden"
-        >
-          <div class="row g-0 align-items-center">
-            <div class="col-md-4">
+          <div class="col-lg-5 text-center">
+            <div class="relative mx-auto w-full max-w-sm">
+              <div
+                class="absolute -inset-3 rounded-full bg-blue-200/40 blur-2xl"
+              ></div>
               <img
                 src="images/profile.jpg"
-                alt="Zawed Bin Tariq"
-                class="img-fluid w-100 h-100"
+                alt="Profile Photo"
+                class="hero-image relative"
               />
             </div>
-            <div class="col-md-8">
-              <div class="card-body p-4 p-lg-5">
-                <h3 class="card-title fw-bold mb-3">Zawed Bin Tariq</h3>
-                <p class="card-text text-muted mb-3">North South University</p>
-                <p class="card-text">
-                  I enjoy learning by building. My work usually focuses on
-                  solving practical problems through structured backend systems,
-                  database design, and intelligent applications.
-                </p>
+          </div>
+        </div>
+      </div>
+    </header>
 
-                <div class="mb-3">
-                  <span class="badge text-bg-primary">Python</span>
-                  <span class="badge text-bg-secondary">Node.js</span>
-                  <span class="badge text-bg-success">PostgreSQL</span>
-                  <span class="badge text-bg-info">Bootstrap</span>
-                  <span class="badge text-bg-dark">Security</span>
-                </div>
-
-                <a href="about.html" class="btn btn-outline-primary custom-btn"
-                  >Read Full About Section</a
-                >
-              </div>
-            </div>
+    <!-- Intro Alert -->
+    <section class="py-5">
+      <div class="container">
+        <div
+          class="alert alert-primary d-flex align-items-start align-items-md-center gap-3"
+          role="alert"
+        >
+          <i class="bi bi-lightbulb-fill fs-4"></i>
+          <div>
+            <strong>Lab 3 Upgrade:</strong>
+            This homepage is now fully responsive for mobile, tablet, and
+            desktop, with improved transitions, animated cards, responsive
+            buttons, and Bootstrap component styling.
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Highlights Section -->
-    <section class="py-5">
+    <!-- Feature Cards -->
+    <section class="pb-5">
       <div class="container">
         <div class="text-center mb-5">
-          <h2 class="section-title">Quick Highlights</h2>
+          <h2 class="section-title">What This Portfolio Includes</h2>
           <p class="section-subtitle">
-            Some of the areas where I have worked through academic and practical
-            projects.
+            The website demonstrates responsive web design, Bootstrap
+            components, Tailwind utilities, and visually enhanced user
+            interaction.
           </p>
         </div>
 
         <div class="row g-4">
-          <div class="col-md-4">
-            <div class="card feature-card shadow-sm h-100">
+          <div class="col-12 col-md-6 col-xl-3">
+            <div class="card feature-card h-100 border-0 reveal-up">
               <div class="card-body p-4">
-                <h4 class="card-title">AI Chatbot</h4>
+                <div class="mb-3 text-primary fs-2">
+                  <i class="bi bi-person-vcard"></i>
+                </div>
+                <h5 class="card-title">About Me</h5>
                 <p class="card-text">
-                  Built a multilingual modular chatbot using Python and NLP
-                  concepts to support more flexible interaction.
+                  A responsive Bootstrap profile section with improved spacing,
+                  hover effects, and clean visual design.
                 </p>
-                <span class="badge text-bg-primary">AI/ML</span>
-                <span class="badge text-bg-light border text-dark">Python</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-4">
-            <div class="card feature-card shadow-sm h-100">
-              <div class="card-body p-4">
-                <h4 class="card-title">Doctor Platform</h4>
-                <p class="card-text">
-                  Designed a secure appointment and scheduling platform using
-                  PostgreSQL and Node.js.
-                </p>
-                <span class="badge text-bg-success">Backend</span>
-                <span class="badge text-bg-light border text-dark"
-                  >Database</span
+                <a
+                  href="about.html"
+                  class="btn btn-outline-primary btn-sm mt-2"
                 >
+                  Visit Page
+                </a>
               </div>
             </div>
           </div>
 
-          <div class="col-md-4">
-            <div class="card feature-card shadow-sm h-100">
+          <div class="col-12 col-md-6 col-xl-3">
+            <div
+              class="card feature-card h-100 border-0 reveal-up reveal-delay-1"
+            >
               <div class="card-body p-4">
-                <h4 class="card-title">Linux Hardening</h4>
+                <div class="mb-3 text-success fs-2">
+                  <i class="bi bi-mortarboard-fill"></i>
+                </div>
+                <h5 class="card-title">Education</h5>
                 <p class="card-text">
-                  Explored Linux server protection practices including
-                  authentication control and secure access setup.
+                  Responsive education cards, badges, and tables arranged neatly
+                  for all screen sizes.
                 </p>
-                <span class="badge text-bg-dark">Security</span>
-                <span class="badge text-bg-light border text-dark">Linux</span>
+                <a
+                  href="education.html"
+                  class="btn btn-outline-success btn-sm mt-2"
+                >
+                  Visit Page
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-xl-3">
+            <div
+              class="card feature-card h-100 border-0 reveal-up reveal-delay-2"
+            >
+              <div class="card-body p-4">
+                <div class="mb-3 text-warning fs-2">
+                  <i class="bi bi-airplane-fill"></i>
+                </div>
+                <h5 class="card-title">Travel</h5>
+                <p class="card-text">
+                  Two responsive travel pages with carousel, cards, badges, and
+                  enhanced image presentation.
+                </p>
+                <div class="d-flex flex-column gap-2">
+                  <a href="travel1.html" class="btn btn-outline-warning btn-sm">
+                    Cox's Bazar
+                  </a>
+                  <a href="travel2.html" class="btn btn-outline-dark btn-sm">
+                    Sajek
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-xl-3">
+            <div
+              class="card feature-card h-100 border-0 reveal-up reveal-delay-3"
+            >
+              <div class="card-body p-4">
+                <div class="mb-3 text-danger fs-2">
+                  <i class="bi bi-envelope-paper-fill"></i>
+                </div>
+                <h5 class="card-title">Contact</h5>
+                <p class="card-text">
+                  A responsive contact form with improved fields, transitions,
+                  and mobile-friendly layout.
+                </p>
+                <a
+                  href="contact.html"
+                  class="btn btn-outline-danger btn-sm mt-2"
+                >
+                  Visit Page
+                </a>
               </div>
             </div>
           </div>
@@ -251,49 +266,166 @@
       </div>
     </section>
 
-    <!-- Call to Action -->
+    <!-- Highlights -->
     <section class="pb-5">
       <div class="container">
-        <div class="card border-0 shadow-sm rounded-4 bg-white">
-          <div class="card-body p-4 p-lg-5 text-center">
-            <h3 class="fw-bold mb-3">Want to explore more?</h3>
-            <p class="text-muted mb-4">
-              Visit the projects page to see my work, or explore the travel
-              pages to view some of my favorite places.
-            </p>
-            <a href="projects.html" class="btn btn-primary custom-btn me-2"
-              >Projects</a
-            >
-            <a href="travel1.html" class="btn btn-outline-secondary custom-btn"
-              >Travel Gallery</a
-            >
+        <div class="row g-4">
+          <div class="col-lg-7">
+            <div class="card border-0 info-card h-100">
+              <div class="card-body p-4 p-lg-5">
+                <h3 class="card-title mb-3">Why This Design Is Better Now</h3>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item bg-transparent px-0">
+                    <i class="bi bi-check-circle-fill text-success me-2"></i>
+                    Mobile-first responsive layout using Bootstrap grid and
+                    utility classes
+                  </li>
+                  <li class="list-group-item bg-transparent px-0">
+                    <i class="bi bi-check-circle-fill text-success me-2"></i>
+                    Improved UI with smooth hover effects, shadows, spacing, and
+                    transitions
+                  </li>
+                  <li class="list-group-item bg-transparent px-0">
+                    <i class="bi bi-check-circle-fill text-success me-2"></i>
+                    Responsive navbar with proper mobile collapse
+                  </li>
+                  <li class="list-group-item bg-transparent px-0">
+                    <i class="bi bi-check-circle-fill text-success me-2"></i>
+                    Two travel pages instead of one generic travel file
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-5">
+            <div class="row g-3">
+              <div class="col-6">
+                <div class="stat-box">
+                  <h3>6</h3>
+                  <p class="mb-0 text-muted">Main Pages</p>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="stat-box">
+                  <h3>8+</h3>
+                  <p class="mb-0 text-muted">Components</p>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="stat-box">
+                  <h3>100%</h3>
+                  <p class="mb-0 text-muted">Responsive</p>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="stat-box">
+                  <h3>Smooth</h3>
+                  <p class="mb-0 text-muted">Animations</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Footer Start -->
+    <!-- Welcome Modal -->
+    <div
+      class="modal fade"
+      id="welcomeModal"
+      tabindex="-1"
+      aria-labelledby="welcomeModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="welcomeModalLabel">
+              Welcome to My Portfolio
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+
+          <div class="modal-body">
+            <div class="row g-4 align-items-center">
+              <div class="col-md-5 text-center">
+                <img
+                  src="images/profile.jpg"
+                  alt="Profile Preview"
+                  class="img-fluid rounded-4 shadow-sm"
+                  style="max-height: 320px; object-fit: cover"
+                />
+              </div>
+
+              <div class="col-md-7">
+                <h4 class="mb-3">A Modern Responsive Portfolio</h4>
+
+                <p class="text-muted mb-3">
+                  This website demonstrates responsive web design by combining
+                  Bootstrap components, custom CSS, and Tailwind utility
+                  classes.
+                </p>
+
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item px-0">
+                    Responsive navbar with mobile collapse
+                  </li>
+                  <li class="list-group-item px-0">
+                    Animated cards and button hover effects
+                  </li>
+                  <li class="list-group-item px-0">
+                    Responsive profile and contact sections
+                  </li>
+                  <li class="list-group-item px-0">
+                    Improved component styling for better user experience
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal-footer">
+            <a href="about.html" class="btn btn-primary">Go to About Page</a>
+            <button
+              type="button"
+              class="btn btn-outline-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
     <footer class="footer-area py-4 mt-4">
-      <div class="container text-center">
-        <p class="mb-2">&copy; 2026 Zawed Bin Tariq</p>
-        <p class="mb-2">
-          Email:
-          <a href="mailto:zawed.tariq@northsouth.edu"
-            >zawed.tariq@northsouth.edu</a
-          >
-          | Phone: +880 1841 519 387
-        </p>
-        <p class="mb-0">
-          GitHub:
-          <a href="https://github.com/zrohan-enter" target="_blank"
-            >github.com/zrohan-enter</a
-          >
-        </p>
+      <div class="container">
+        <div class="row gy-3 align-items-center">
+          <div class="col-md-6 text-center text-md-start">
+            <p class="mb-0">
+              &copy; 2026 Zawed Bin Tariq. All rights reserved.
+            </p>
+          </div>
+          <div class="col-md-6 text-center text-md-end">
+            <a href="index.html" class="me-3">Home</a>
+            <a href="about.html" class="me-3">About</a>
+            <a href="education.html" class="me-3">Education</a>
+            <a href="travel1.html" class="me-3">Cox's Bazar</a>
+            <a href="travel2.html" class="me-3">Sajek</a>
+            <a href="contact.html">Contact</a>
+          </div>
+        </div>
       </div>
     </footer>
-    <!-- Footer End -->
 
-    <!-- Bootstrap JS Bundle CDN -->
+    <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
