@@ -1,65 +1,106 @@
-# Personal Portfolio - CSE482L Lab Task 1
+# Responsive Portfolio Website - CSE482L Lab Task 3
 
 **Author:** Zawed Bin Tariq  
 **Course:** CSE 482L: Internet and Web Technology Lab  
-**Institution:** North South University
+**Institution:** North South University  
 
 ---
 
 ## 📖 Project Overview
 
-This repository contains my personal portfolio website, created as part of **Lab Task 1** for CSE482L. The objective was to build a 5-page structured website using only the HTML and CSS concepts taught in class—specifically **without** utilizing modern CSS Flexbox or Grid layouts.
+This project is an upgraded version of my personal portfolio website, developed for **Lab Task 3**.
 
-The portfolio highlights my academic background, technical skills, notable projects (like my AI Chatbot and MediNear), and my personal travel experiences.
+The main objective was to transform a basic multi-page website into a **fully responsive and visually enhanced portfolio** using modern frameworks and UI improvements.
 
----
-
-## 🚀 Features & Implementation
-
-- **5 Linked Pages:** Includes Home (`index.html`), About (`about.html`), Projects (`projects.html`), and two travel pages (Cox's Bazar and Sajek Valley).
-- **Strict CSS Constraints:** The layout was built using traditional box-model properties (`margins`, `padding`, `display: inline-block`) to completely avoid `display: flex` and `display: grid`.
-- **Semantic HTML5:** Structured using `<header>`, `<nav>`, `<main>`, `<section>`, `<article>`, and `<footer>` for proper accessibility and code readability.
-- **Advanced Image Handling:** Utilized `object-fit: cover` and precise `object-position` percentages to perfectly crop and frame portrait photos into circular profiles and landscape hero banners without distortion.
-- **Consistent Navigation:** A shared global navigation bar highlights the active page the user is currently viewing.
+The website demonstrates practical implementation of responsive design, UI/UX enhancement, and Bootstrap components.
 
 ---
 
-## 📂 File Structure
+## 🚀 Features & Improvements
+
+### ✅ Fully Responsive Design
+- Works on **mobile, tablet, and desktop**
+- Uses Bootstrap grid + responsive utilities
+
+### ✅ Bootstrap Components Used
+- Navbar (with mobile collapse)
+- Cards
+- Buttons
+- Alerts
+- Badges
+- Forms
+- Tables
+- Modal (Home page)
+- Carousel (Travel pages)
+
+### ✅ UI/UX Enhancements
+- Smooth hover effects
+- Card animations
+- Clean spacing and layout improvements
+- Improved typography and color usage
+
+### ✅ Tailwind Integration
+- Utility classes for spacing, alignment, and styling
+- Combined with Bootstrap for better flexibility
+
+---
+
+## 🌍 Website Pages
+
+- `index.html` → Home (Hero section + Modal)
+- `about.html` → Profile, skills, and personal information
+- `education.html` → Academic background (cards + table)
+- `travel1.html` → Cox’s Bazar (Carousel + cards)
+- `travel2.html` → Sajek Valley (Carousel + form)
+- `contact.html` → Responsive contact form
+
+---
+
+## 📂 Updated File Structure
 
 ```text
 CSE_482_LAB/
 │
-├── index.html        # Home page with hero section and quick highlights
-├── about.html        # Academic background, skills, and certifications
-├── projects.html     # Detailed cards for technical projects
-├── travel1.html      # Travel page: Cox's Bazar
-├── travel2.html      # Travel page: Sajek Valley
-├── README.md         # Project documentation
+├── index.html
+├── about.html
+├── education.html
+├── travel1.html
+├── travel2.html
+├── contact.html
+├── README.md
 │
 ├── css/
-│   └── style.css     # Global stylesheet with NO flexbox/grid
+│   └── style.css
 │
 └── images/
-    ├── profile.jpg   # Main profile headshot
-    ├── cox1.jpg      # Cox's Bazar hero image
-    ├── cox2.jpg      # Cox's Bazar gallery image
-    ├── sajek1.jpg    # Sajek Valley hero image
-    └── sajek2.jpg    # Sajek Valley gallery image
+    ├── profile.jpg
+    ├── cox1.jpg
+    ├── cox2.jpg
+    ├── sajek1.jpg
+    └── sajek2.jpg
 ```
 
----
-
 ## 🛠️ Technologies Used
-
-- **HTML5:** Forms, Tables, Lists, Semantic Tags, Image Integration.
-- **CSS3:** Box model, `inline-block` layout, linear-gradients, hover transitions, box-shadows, aspect-ratio styling.
-- **Git/GitHub:** Version control, frequent commits, and repository hosting.
-
----
+* HTML5
+* CSS3
+* Bootstrap 5
+* Tailwind CSS
+* JavaScript (Bootstrap JS)
+* Git & GitHub
 
 ## ⚙️ How to Run
+1. Clone the repository:
+   `git clone https://github.com/zrohan-enter/CSE_482_LAB.git`
+2. Open the folder.
+3. Run: `index.html` (No server required).
 
-1.  **Clone the repository** or download the ZIP file.
-2.  Navigate to the project folder.
-3.  Open the `index.html` file in any modern web browser (Google Chrome, Mozilla Firefox, Microsoft Edge).
-4.  _Note:_ No local server or build tools are required.
+## 💡 Key Learning Outcomes
+* Responsive web design principles
+* Bootstrap component integration
+* Combining frameworks (Bootstrap + Tailwind)
+* UI/UX improvement techniques
+* Real-world portfolio structure
+
+## 👨‍💻 Author
+**Zawed Bin Tariq** North South University  
+Dhaka, Bangladesh
